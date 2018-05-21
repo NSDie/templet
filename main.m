@@ -41,7 +41,7 @@ target_B=imrotate(target,z*ang,'bicubic','crop');
 target_B=cut_pic_black(target_B); %去黑边
 
 [m,n]=size(test);  
-[m0,n0]=size(target_B);  ang
+[m0,n0]=size(target_B);  
 result=zeros(m-m0+1,n-n0+1);  
 vec_sub = double( target_B(:) );  
 norm_sub = norm( vec_sub );   
